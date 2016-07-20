@@ -49,6 +49,7 @@ public class EchoServer {
 				item.sendMessage(message);
 			} catch (IOException e) {
 				e.printStackTrace();
+				continue;
 			}
 		}
 	}
@@ -80,6 +81,7 @@ public class EchoServer {
 	 * @throws IOException
 	 */
 	public void sendMessage(String message) throws IOException{
+		System.out.println("send: " + message);
 		this.session.getBasicRemote().sendText(message);
 	}
 	

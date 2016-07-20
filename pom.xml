@@ -134,7 +134,6 @@
 					</webAppConfig>
 					<stopKey>stop</stopKey>
 					<stopPort>8889</stopPort>
-					<scanIntervalSeconds>1</scanIntervalSeconds>
 					<reload>automatic</reload>
 					<scanTargetPatterns>
 						<scanTargetPattern>
