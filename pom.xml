@@ -130,7 +130,7 @@
 						<port>8080</port>
 					</httpConnector>
 					<webAppConfig>
-						<contextPath>/${project.build.finalName}</contextPath>
+						<contextPath>/</contextPath>
 					</webAppConfig>
 					<stopKey>stop</stopKey>
 					<stopPort>8889</stopPort>
