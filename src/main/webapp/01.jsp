@@ -43,7 +43,7 @@
 		
 		//if(window.WebSocket){
 		if ('WebSocket' in window) {
-			websocket = new WebSocket("ws://localhost:8080/echo");
+			websocket = new WebSocket("ws://localhost/echo");
 		}else{
 			alert("Not Support WebSocket");
 		}

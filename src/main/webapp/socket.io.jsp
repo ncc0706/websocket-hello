@@ -34,33 +34,18 @@
 		</div>
 		
 	</div>
-	<script src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
-	<script src="//cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="${pageContext.request.contextPath }/js/socket.io/socket.io.js"></script>
+	<!-- <script src="//cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="//cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		  var socket = io('http://127.0.0.1');
+		  socket.on('connect', function(){
+			  console.log("..........");
+		  });
+		  console.log(io);
+		  socket.on('event', function(data){});
+		  socket.on('disconnect', function(){});
+		</script>
 	
-	<script type="text/javascript">
-		var socket = io("http://127.0.0.1:8080/echo", {
-	        'reconnection delay': 2000,
-	        'force new connection': true
-	    });
-		console.log(socket);
-		//websocket连接成功
-		socket.on('connect', function() {
-			console.log('connected');
-		});
-		
-
-		
-		//断开连接
-		socket.on('disconnect', function(){
-			
-		});
-		
-		
-		
-		
-		
-		
-	</script>
 </body>
 </html>
