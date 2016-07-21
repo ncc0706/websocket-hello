@@ -22,8 +22,8 @@
 <c:catch var="aa">
 <%
 	
-	List datas = new ArrayList();
-	datas.add(1212);
+	List<String> datas = new ArrayList<String>();
+	datas.add("00000000");
 	datas.add("aaaaaaaa");
 	datas.add("bbbbbbbb");
 	datas.add("cccccccc");
