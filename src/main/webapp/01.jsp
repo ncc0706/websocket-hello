@@ -29,8 +29,9 @@
 			</div>
 		</div>
 		
-		<div class="row" id="mesageinfo">
-			
+		<div class="row">
+			<div id="mesageinfo" class="col-sm-8"></div>
+			<div id="onlineuser" class="col-sm-4"></div>
 		</div>
 		
 	</div>
@@ -42,7 +43,7 @@
 		
 		//if(window.WebSocket){
 		if ('WebSocket' in window) {
-			websocket = new WebSocket("ws://localhost:8080/websocket-hello/echo");
+			websocket = new WebSocket("ws://localhost:8080/echo");
 		}else{
 			alert("Not Support WebSocket");
 		}
